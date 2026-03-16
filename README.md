@@ -5,7 +5,7 @@ If you use Tesla P100 with Quadro card, install the Quadro RTX driver.
 Personally, I use the Tesla P100 with my RTX 2080 Ti and I couldn't enable WDDM on the P100 if I install the Game Ready/Studio 2080Ti driver, but installing any above drivers can enable WDDM mode but not recognizing my 2080Ti.  
 ## The solution:
 The CUDA Toolkit bundled driver support both 2080Ti and P100 with WDDM mode. Thanks to Garrod Zhang (@garrod_zhang) for reporting it, I take no credit in this, he's the real ni🅱️🅱️a: [Come and say Thanks to his post](https://egpu.io/forums/builds/2022-15-6-asus-tuf-gaming-f15-3050-12th4p8eh-tesla-p100-32gbps-tb3-razer-core-x-chroma-win11-23h2/)  
-Download the CUDA Toolkit from [This link](https://developer.nvidia.com/cuda-toolkit-archive), note that the last version that comes bundled with driver (as of writing now) is 12.9.1, the 13.x version does not come with driver at all.  
+Download the CUDA Toolkit from [This link](https://developer.nvidia.com/cuda-toolkit-archive), note that the last version that comes bundled with driver (as of writing now) is 12.9.1 (But on testing it would not work), the 13.x version does not come with driver at all.  
 I downloaded the Cuda 12.3.2 simply because Pytorch is compatible with it, so ymmv.  
 During the installation, just uncheck the CUDA Parts and any other parts you don't need, just the driver is enough for me.  
 
